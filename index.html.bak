@@ -1,0 +1,92 @@
+<!doctype html>
+<!--[if lte IE 8]> <html class="no-js old-ie" lang="cz"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="cz">
+<!--<![endif]-->
+
+  <head>
+
+    <meta charset="utf-8">
+    
+    <title>
+      ____Title____
+    </title>
+
+    <meta name="description" content="____Popis____">    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+    <script>
+        document.documentElement.className =
+         document.documentElement.className.replace("no-js","js");
+    </script>      
+
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/blanka.css">
+	<link rel="stylesheet" href="css/style.css">
+
+  </head>
+  
+  <body>
+
+    <a href="#main">skok na hlavní obsah</a>
+
+    <div class="container">
+
+      <main id="main" role="main" class="content">
+	      
+<table id="myTable">
+<tr>
+            
+<th>Název položky</th>
+
+<th>Počáteční stav</th>
+    
+<th>Dodáno</th>
+
+<th>Celkem</th>
+
+<th>Zůstatek</th>
+
+<th>Prodáno</th>
+
+<th>Cena</th>
+
+<th>Výsledek</th>
+
+</tr>
+<tr>
+<td><input type="text" readonly="" value="Coca-Cola 0,5l" name="nazevpolozky"></td>
+                
+<td><input onkeyup="calc(this);" type="number" name="pocatecnistav" onchange="calc(this);"></td>
+                    
+<td><input onkeyup="calc(this);" type="number" name="dodano" onchange="calc(this);"></td>
+
+<td><input type="number" readonly="" name="celkem"></td>
+                        
+<td><input onkeyup="calc(this);" type="number" name="zustatek" onchange="calc(this);"></td>
+                            
+<td><input type="number" readonly="" name="prodano"></td>
+
+<td><input type="number" value="32" readonly="" name="cena"></td>
+
+<td><input type="number" readonly="" name="vysledek"></td>
+    
+</tr>
+                            
+</table>
+                        
+	<button onclick="addRow()">Add Row</button>
+        
+      </main><!-- /.content -->
+      
+
+    </div><!-- /.container -->
+  
+    <script src="js/script.js"></script>
+    
+  </body>
+    
+</html>

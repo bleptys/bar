@@ -1,0 +1,29 @@
+.focus-only {
+    position: absolute;
+    top: 0;
+    right: 100%;
+}
+
+body {
+    font-family: "Calibri"; margin:0;}
+
+#inTotal {
+	font-weight: bold;
+	border-bottom: 2px solid black;
+}
+.nr {
+	font-weight: bold;
+}
+input {
+    border: none;
+    background: transparent;
+	text-align: center;
+}
+table, th, td {
+    border: 1px solid black;	
+    border-collapse: collapse;
+}
+.Left {
+	text-align: left;
+	margin-left: 5px;
+}
