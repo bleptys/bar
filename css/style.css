@@ -1,29 +1,22 @@
-.focus-only {
-    position: absolute;
-    top: 0;
-    right: 100%;
+#myTable, #myTable input {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-body {
-    font-family: "Calibri"; margin:0;}
+#myTable td, #myTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
 
-#inTotal {
-	font-weight: bold;
-	border-bottom: 2px solid black;
-}
-.nr {
-	font-weight: bold;
-}
-input {
-    border: none;
-    background: transparent;
-	text-align: center;
-}
-table, th, td {
-    border: 1px solid black;	
-    border-collapse: collapse;
-}
-.Left {
-	text-align: left;
-	margin-left: 5px;
+#myTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#myTable tr:hover {background-color: #ddd;}
+
+#myTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
 }
