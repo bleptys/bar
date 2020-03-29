@@ -1,19 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-  var values = JSON.parse(localStorage.getItem('vemsito') || '{}');
-
-  var inputs = document.getElementsByClassName('vemsito');
-
-
-  for (let i = 0; i < inputs.length; i++) {
-    var x = inputs[i];
-    x.value = values[i] || '';
-
-    x.onchange = function() {
-      values[i] = this.value;
-      localStorage.setItem('vemsito', JSON.stringify(values));
-    }
-  }
-
 function calc(id) {
 var row=id.parentNode.parentNode;
 var pocatecnistav=row.cells[1].getElementsByTagName('input')[0].value;
