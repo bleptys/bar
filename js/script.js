@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(calc(id)) {{
+document.addEventListener('DOMContentLoaded', function(calc(id)) {
   var values = JSON.parse(localStorage.getItem('vemsito') || '{}');
 
   var inputs = document.getElementsByClassName('vemsito');
@@ -31,4 +31,4 @@ var cena=row.cells[5].getElementsByTagName('input')[0].value;
 var vysledek=parseFloat(cena)*parseFloat(res);
 
 row.cells[6].getElementsByTagName('input')[0].value=vysledek;
-}}
+}
