@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(calc(id)) {
+document.addEventListener('DOMContentLoaded', function() {
   var values = JSON.parse(localStorage.getItem('vemsito') || '{}');
 
   var inputs = document.getElementsByClassName('vemsito');
