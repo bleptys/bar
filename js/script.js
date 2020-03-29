@@ -32,5 +32,3 @@ document.addEventListener('DOMContentLoaded', function() {
       localStorage.setItem('vemsito', JSON.stringify(values));
     }
   }
-
-});
