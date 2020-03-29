@@ -16,21 +16,3 @@ var vysledek=parseFloat(cena)*parseFloat(res);
 
 row.cells[6].getElementsByTagName('input')[0].value=vysledek;
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-  var values = JSON.parse(localStorage.getItem('input') || '{}');
-
-  var inputs = document.getElementsByTagName('input');
-
-
-  for (let i = 0; i < inputs.length; i++) {
-    var x = inputs[i];
-    x.value = values[i] || '';
-
-    x.onchange = function() {
-      values[i] = this.value;
-      localStorage.setItem('input', JSON.stringify(values));
-    }
-  }
-
-});
