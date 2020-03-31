@@ -16,3 +16,30 @@ var vysledek=parseFloat(cena)*parseFloat(res);
 
 row.cells[6].getElementsByTagName('input')[0].value=vysledek;
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    // analyzovat uložený JSON, pokud existuje jinak prázdný objekt 
+    var values = JSON.parse(localStorage.getItem('vemsito') || '{}');
+
+    var inputs = document.getElementsByClassName('vemsito');
+
+
+    for (let i = 0; i < inputs.length; i++) {
+        var x = inputs[i];
+        x.value = values[i] || ''; // uložená hodnota, pokud existuje, nebo prázdný řetězec
+
+        x.onchange = function () {
+            // přiřaďte hodnotu výše uvedenému objektu
+            values[i] = this.value;
+            // uložit aktualizovanou verzi objektu
+            localStorage.setItem('vemsito', JSON.stringify(values));
+        }
+    }
+    
+    
+
+});
+
+function deleteItems() {
+  localStorage.clear();
+}
