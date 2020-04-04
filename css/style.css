@@ -11,3 +11,7 @@ table, td, th{
 th {
 	background-color: yellow;
 }
+
+.oddelovac {
+page-break-before: always;
+}
