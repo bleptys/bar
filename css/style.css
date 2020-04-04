@@ -14,4 +14,5 @@ th {
 
 .oddelovac {
 page-break-before: always;
+page-break-after: always;
 }
