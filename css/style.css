@@ -12,7 +12,7 @@ th {
 	background-color: yellow;
 }
 
-.oddelovac {
+h1 {
 page-break-before: always;
 page-break-after: always;
 }
