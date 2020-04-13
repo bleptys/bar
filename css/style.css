@@ -1,4 +1,4 @@
-table, td input {
+table, td, input {
 	border-collapse: collapse;
 	width: 100%;
 	box-sizing: border-box;
@@ -10,9 +10,4 @@ table, td, th{
 }
 th {
 	background-color: yellow;
-}
-
-h1 {
-page-break-before: always;
-page-break-after: always;
 }
