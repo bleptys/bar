@@ -26,6 +26,30 @@
     <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/blanka.css">
 	<link rel="stylesheet" href="css/style.css">
+<style>
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
 
   </head>
   
@@ -888,7 +912,7 @@
 
 <tr>
 <th>Kin.Bueno</th>
-<td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="79"></td>
+<td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp79"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out79"></td>
 <td><input type="number" readonly="" name="prodano"></td>
