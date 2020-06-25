@@ -1,13 +1,15 @@
-table, td, input {
+table, tr, th,  td, input {
 	border-collapse: collapse;
 	width: 100%;
 	box-sizing: border-box;
 	text-align: center;
-	border: 0;
-}
-table, td, th{
-	border: 1px solid black;
+    border: 1px solid black;
 }
 th {
 	background-color: yellow;
+}
+
+input {
+border: 0;
+background-color: white;
 }

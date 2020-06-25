@@ -1,8 +1,5 @@
 <!doctype html>
-<!--[if lte IE 8]> <html class="no-js old-ie" lang="cz"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="cz">
-<!--<![endif]-->
+<html lang="cz">
 
   <head>
 
@@ -13,44 +10,11 @@
     </title>
 
     <meta name="description" content="Vyúčtování na baru">    
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">  
-
-    <script>
-        document.documentElement.className =
-         document.documentElement.className.replace("no-js","js");
-    </script>      
 
     <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/blanka.css">
 	<link rel="stylesheet" href="css/style.css">
-<style>
-#customers {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-#customers td, #customers th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#customers tr:nth-child(even){background-color: #f2f2f2;}
-
-#customers tr:hover {background-color: #ddd;}
-
-#customers th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #4CAF50;
-  color: white;
-}
-</style>
-
   </head>
   
   <body>
@@ -60,7 +24,7 @@
 
 <tr>
 <th>Název</th>
-<th>Stav</th>
+<th>  Stav  </th>
 <th>Fasování</th>
 <th>Zůstatek</th>
 <th>Prodáno</th>
@@ -73,9 +37,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp1"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out1"></td>
-<td><input type="number" name="prodano" class="vemsito"></td>
-<td><input type="number" value="38" readonly="" name="cena"></td>
-<td><input type="number" name="vysledek" class="vemsito"></td>
+<td><input disabled type="number" name="prodano" class="vemsito"></td>
+<td><input disabled type="number" value="38"  name="cena"></td>
+<td><input disabled type="number" name="vysledek" class="vemsito"></td>
 </tr>
 
 <tr>
@@ -83,9 +47,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp2"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out2"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="30" readonly="" name="cena"></td>
-<td><input type="number" name="vysledek" readonly="">
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="30"  name="cena"></td>
+<td><input disabled type="number" name="vysledek" >
 </tr>
 
 <tr>
@@ -93,9 +57,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp3"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out3"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="37" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="37"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -103,9 +67,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp4"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out4"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="25" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="25"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -113,9 +77,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp5"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out5"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="30" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="30"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -123,9 +87,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp6"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out6"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="70" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="70"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -133,9 +97,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp7"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out7"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="45" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="45"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -143,9 +107,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp8"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out8"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="29" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="29"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -153,9 +117,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp9"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out9"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="30" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="30"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -163,49 +127,49 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp10"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out10"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="30" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="30"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
-<th>Vinea, Kofola plast</th>
+<th>Vinea, Kfl plast</th>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp11"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out11"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="32" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="32"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
-<th>Láhev Cola</th>
+<th>E Sklo Cola</th>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp12"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out12"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="2" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="2"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
-<th>Láhev Pivo</th>
+<th>E Sklo Pivo</th>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp13"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out13"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="3" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="3"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
-<th>Láhev Kofola</th>
+<th>E Sklo Kofola</th>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp14"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out14"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="3" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="3"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 </table>
@@ -224,43 +188,43 @@
 </tr>
 
 <tr>
-<th>Plzeň sud -13kg</th>
+<th>Plzeň sud</th>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp15"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out15"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="90" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="90"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
-<th>Gambrinus sud</th>
+<th>Gambáč sud</th>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp16"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out16"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="74" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="74"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
-<th>Kozel sud -10kg</th>
+<th>Kozel sud</th>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp17"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out17"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="74" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="74"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
-<th> Gambrinus sklo</th>
+<th> Gambáč sklo</th>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp18"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out18"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="37" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="37"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -268,9 +232,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp19"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out19"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="45" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="45"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -278,9 +242,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp20"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out20"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="37" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="37"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -288,9 +252,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp21"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out21"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="2" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="2"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -298,9 +262,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp22"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out22"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="37" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="37"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -308,9 +272,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp23"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out23"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="34" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="34"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -318,9 +282,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp24"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out24"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="35" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="35"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -328,9 +292,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp25"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out25"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="34" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="34"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -338,9 +302,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp26"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out26"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="5" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="5"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -348,9 +312,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp27"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out27"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="5" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="5"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -358,9 +322,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp28"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out28"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="100" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="100"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -368,9 +332,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp29"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out29"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="9" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="9"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -378,9 +342,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp30"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out30"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="4" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="4"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -388,9 +352,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp31"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out31"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="9" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="9"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 </table>
@@ -412,9 +376,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp32"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out32"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="875" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="875"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -422,9 +386,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp33"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out33"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="875" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="875"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -432,9 +396,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp34"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out34"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="875" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="875"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -442,9 +406,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp35"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out35"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="700" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="700"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -452,9 +416,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp36"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out36"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="875" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="875"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -462,9 +426,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp37"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out37"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="625" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="625"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -472,9 +436,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp38"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out38"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="575" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="575"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -482,9 +446,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp39"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out39"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="180" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="180"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -492,9 +456,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp40"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out40"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="1125" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="1125"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -502,9 +466,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp41"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out41"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="800" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="800"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -512,9 +476,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp42"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out42"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="725" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="725"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -522,9 +486,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp43"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out43"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="1500" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="1500"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -532,9 +496,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp44"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out44"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="1125" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="1125"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -542,9 +506,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp45"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out45"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="1500" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="1500"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -552,9 +516,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp46"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out46"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="625" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="625"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -562,9 +526,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp47"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out47"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="170" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="170"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -572,9 +536,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp48"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out48"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="170" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="170"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -582,9 +546,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp49"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out49"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="130" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="130"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -592,9 +556,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp50"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out50"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="130" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="130"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 </table>
@@ -617,9 +581,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp51"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out51"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="25" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="25"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -627,9 +591,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp52"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out52"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="22" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="22"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -637,9 +601,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp53"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out53"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="25" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="25"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -647,9 +611,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp54"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out54"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="25" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="25"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -657,9 +621,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp55"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out55"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="25" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="25"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -667,9 +631,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp56"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out56"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="19" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="19"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -677,9 +641,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp57"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out57"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="30" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="30"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -687,9 +651,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp58"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out58"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="30" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="30"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -697,9 +661,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp59"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out59"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="17" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="17"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -707,9 +671,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp60"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out60"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="32" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="32"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -717,9 +681,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp61"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out61"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="15" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="15"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -727,9 +691,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp62"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out62"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="16" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="16"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -737,9 +701,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp63"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out63"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="16" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="16"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -747,9 +711,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp64"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out64"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="35" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="35"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -757,9 +721,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp65"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out65"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="16" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="16"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -767,9 +731,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp66"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out66"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="16" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="16"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -777,9 +741,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp67"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out67"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="16" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="16"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 </table>
@@ -805,9 +769,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp68"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out68"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="29" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="29"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -815,9 +779,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp69"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out69"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="32" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="32"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -825,9 +789,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp70"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out70"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="48" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="48"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -835,9 +799,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp71"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out71"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="19" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="19"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -845,9 +809,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp72"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out72"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="12" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="12"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -855,9 +819,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp73"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out73"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="25" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="25"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -865,9 +829,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp74"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out74"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="30" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="30"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -875,9 +839,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp75"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out75"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="28" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="28"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -885,9 +849,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp76"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out76"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="37" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="37"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -895,9 +859,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp77"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out77"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="40" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="40"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -905,9 +869,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp78"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out78"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="46" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="46"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -915,9 +879,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp79"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out79"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="32" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="32"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 <tr>
@@ -925,9 +889,9 @@
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="pocatecnistav" onchange="calc(this);" id="inp80"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="dodano" onchange="calc(this);"></td>
 <td><input onkeyup="calc(this);" type="number" class="vemsito"  name="zustatek" onchange="calc(this);" id="out80"></td>
-<td><input type="number" readonly="" name="prodano"></td>
-<td><input type="number" value="35" readonly="" name="cena"></td>
-<td><input type="number" readonly="" name="vysledek"></td>
+<td><input disabled type="number"  name="prodano"></td>
+<td><input disabled type="number" value="35"  name="cena"></td>
+<td><input disabled type="number"  name="vysledek"></td>
 </tr>
 
 </table>
