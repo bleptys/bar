@@ -1,15 +1,23 @@
-table, tr, th,  td, input {
-	border-collapse: collapse;
-	width: 100%;
-	box-sizing: border-box;
-	text-align: center;
-    border: 1px solid black;
-}
-th {
-	background-color: yellow;
+input {
+    width: 100%;
+   border-collapse: collapse;
 }
 
-input {
-border: 0;
-background-color: white;
-}
+table, th, td {  
+	  border: 1px solid black;  
+	  border-collapse: collapse;  
+	}  
+	th, td {  
+	  padding: 10px;
+cellpadding: 100;
+	}  
+	table#alter tr:nth-child(even) {  
+	  background-color: #eee;  
+	}  
+	table tr:nth-child(odd) {  
+	  background-color: #fff;  
+	}  
+	table th {  
+	  color: white;  
+	  background-color: gray;  
+	}
